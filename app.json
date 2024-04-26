@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Arabic Ai",
+    "androidStatusBar": {
+      "translucent": true
+    },
+    "slug": "myapp1",
+    "version": "3.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/newlogo.jpg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A193B"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "googleServicesFile": "./google-services (1).json",
+      "versionCode": "3",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/newlogo.jpg",
+        "backgroundColor": "#1A193B"
+      },
+      "package": "com.ArabicArtificialIntelligence.ArabicAi"
+    },
+
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      [
+        "expo-font",
+        {
+          "InterBlack2": [
+            "./assets/DINNextLTArabic-Medium-2.ttf"
+          ]
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "extraMavenRepos": [
+              "../../node_modules/react-native-adapty/lib/android/localMaven",
+              "../../node_modules/@adapty/react-native-ui/android/localMaven"
+              
+            ],
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f64aa702-65d6-4201-bace-e8c6c4890954"
+      }
+    }
+  }
+}
